@@ -1,0 +1,10 @@
+{% comment %} Get the blocks we need {% endcomment %}
+{% assign blocks = include.blocks | replace: " ", "" | split: "," %}
+
+<div class="section">
+
+{% for block in blocks %}
+    {% include block content=block %}
+{% endfor %}
+
+</div>

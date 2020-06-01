@@ -1,0 +1,27 @@
+{
+  "name": "modern-book-production",
+  "version": "0.0.1",
+  "description": "A graphic description of the modern book-production process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electricbookworks/modern-book-production.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/electricbookworks/modern-book-production/issues"
+  },
+  "homepage": "https://github.com/electricbookworks/modern-book-production#readme",
+  "devDependencies": {
+    "file-exists": "^5.0.1",
+    "gulp": "^4.0.0",
+    "gulp-gm": "0.0.8",
+    "gulp-newer": "^1.3.0",
+    "gulp-responsive-images": "github:electricbookworks/gulp-responsive-images",
+    "gulp-svgmin": "^2.2.0"
+  }
+}

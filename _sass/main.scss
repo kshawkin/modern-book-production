@@ -1,0 +1,32 @@
+// Sizes
+$max-width: 37rem;
+$line-height: 1.6;
+$border-radius: 0.02rem;
+$rule-thickness: 1px;
+
+// Fonts
+$font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-variable-main: 'Inter var', $font-main;
+
+// Import font
+@import url('https://rsms.me/inter/inter.css');
+
+
+// Main wrapper
+// We scope everything to .modern-book-production
+// to make it easier to embed this HTML and CSS on another site
+
+.modern-book-production {
+    font-family: $font-main;
+
+    // Load variable fonts for browsers that support them
+    @supports (font-variation-settings: normal) {
+        font-family: $font-variable-main;
+    }
+
+    line-height: $line-height;
+    margin: auto;
+    max-width: $max-width;
+
+    @import 'type';
+}
