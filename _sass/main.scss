@@ -1,32 +1,48 @@
 // Sizes
 $max-width: 37rem;
 $line-height: 1.6;
-$border-radius: 0.02rem;
-$rule-thickness: 1px;
+$border-radius: 0.1rem;
+$rule-thickness: 2px;
+$curve: 4rem;
 
 // Fonts
 $font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $font-variable-main: 'Inter var', $font-main;
 
+// Colours
+$color-bg: #f9f9f9;
+$color-text: #262626;
+
 // Import font
 @import url('https://rsms.me/inter/inter.css');
 
+// Global styles for the self-standing site
+body {
+    background-color: $color-bg;
+}
 
 // Main wrapper
 // We scope everything to .modern-book-production
 // to make it easier to embed this HTML and CSS on another site
 
 .modern-book-production {
-    font-family: $font-main;
-
-    // Load variable fonts for browsers that support them
-    @supports (font-variation-settings: normal) {
-        font-family: $font-variable-main;
-    }
-
+    background-color: $color-bg;
+    color: $color-text;
     line-height: $line-height;
     margin: auto;
     max-width: $max-width;
 
+    // Load variable fonts for browsers that support them
+    font-family: $font-main;
+    @supports (font-variation-settings: normal) {
+        font-family: $font-variable-main;
+    }
+
+    // Import scoped styles. This order matters.
+    @import 'reset';
     @import 'type';
+    @import 'stage';
+    @import 'task';
+    @import 'modal';
+    @import 'credits';
 }

@@ -1,0 +1,20 @@
+// We expect our HTML and CSS to be embedded in other sites.
+// Those sites' styles might affect the styles of our elements.
+// This partial is used to reset the parent site's styles.
+// It is not exhaustive (we can't know what parent sites
+// will have in their CSS), and may grow over time.
+// If you have an extreme sitation, you could go nuclear with
+// https://github.com/premasagar/cleanslate.
+
+* {
+    background-color: revert;
+    color: revert;
+    float: revert;
+    font-size: revert;
+    font-style: revert;
+    font-weight: revert;
+    line-height: revert;
+    margin: revert;
+    padding: revert;
+    text-align: revert;
+}

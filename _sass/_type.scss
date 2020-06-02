@@ -1,3 +1,52 @@
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+
+    // Lines left and right
+    overflow: hidden;
+    &::before,
+    &::after {
+        background-color: $color-text;
+        content: "";
+        display: inline-block;
+        height: $rule-thickness * 1.5;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    &::before {
+        right: 0.5rem;
+        margin-left: -50%;
+    }
+    &::after {
+        left: 0.5rem;
+        margin-right: -50%;
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+a {
+    color: inherit;
 }
