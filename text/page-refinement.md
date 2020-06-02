@@ -5,6 +5,7 @@ title: "Page refinement"
 ### Page refinement
 
 For high-end print editions, a designer–editor examines every page and refines the automated layout.
+{:.summary}
 
 When producing a high-end, printed edition, some of the finer points of book-page layout can’t be automated, because they require human creativity and problem-solving. A production specialist – with both editorial and design skills – looks at every page and makes nuanced adjustments.
 

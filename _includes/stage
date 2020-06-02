@@ -1,0 +1,10 @@
+{% comment %} Get the tasks we need {% endcomment %}
+{% assign tasks = include.tasks | replace: " ", "" | split: "," %}
+
+<div class="stage">
+
+{% for task in tasks %}
+    {% include task content=task %}
+{% endfor %}
+
+</div>

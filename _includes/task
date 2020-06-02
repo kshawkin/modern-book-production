@@ -1,0 +1,33 @@
+{% comment %} Clear variables {% endcomment %}
+
+{% assign file-name = "" %}
+{% assign page-content = "" %}
+
+{% comment %} Get the content of the relevant markdown file {% endcomment %}
+
+{% for page in site.pages %}
+    {% assign file-name = page.name | replace: ".md", "" %}
+    {% if file-name == include.content %}
+        {% assign page-content = page.content %}
+    {% endif %}
+{% endfor %}
+
+{% comment %} Get the image filename as a png {% endcomment %}
+{% capture image-filename %}{{ include.content }}.png{% endcapture %}
+
+{% comment %} Generate the HTML block {% endcomment %}
+
+<div class="task" id="{{ include.content }}">
+
+    <div class="task-image">
+        {% include image file=image-filename %}
+    </div>
+
+{% comment %} Don't indent, or we get markdown code. {% endcomment %}
+<div class="task-text" markdown="1">
+{{ page-content }}
+</div>
+
+{% include cross.svg %}
+
+</div>

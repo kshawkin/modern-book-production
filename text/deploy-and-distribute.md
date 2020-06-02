@@ -5,6 +5,7 @@ title: "Deployment and distribution"
 ### Deployment and distribution
 
 It’s showtime! PDFs go to the printer, ebooks to retailers, and apps to app stores. Websites go live.
+{:.summary}
 
 Throughout this process, the team has been producing PDFs, websites, ebooks or apps for review. Now it’s time for the project director to sign them off for public consumption.
 

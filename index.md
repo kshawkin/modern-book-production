@@ -5,65 +5,63 @@ description: site.data.settings.description
 
 # {{ site.data.settings.title }}
 
-This is an overview of a modern book-production team’s process. A modern workflow is designed to produce multi-format publications, from a single, version-controlled source of truth. Team members can work simultaneously and remotely.
-
-This process might span several weeks to many months.
+This is an overview of a modern book-production process, designed to produce multi-format publications from a single, version-controlled content source. Team members can work simultaneously and remotely. This process might span weeks, months or years.
 
 
 ## Setup
 
-{% include section
-    blocks="conceptualisation"
+{% include stage
+    tasks="conceptualisation"
 %}
 
-{% include section
-    blocks="commission-authors, tech-infrastructure"
+{% include stage
+    tasks="commission-authors, tech-infrastructure"
 %}
 
-## Creative stage
+## Creation
 
-{% include section
-    blocks="writing"
+{% include stage
+    tasks="writing"
 %}
 
-{% include section
-    blocks="ms-review"
+{% include stage
+    tasks="ms-review"
 %}
 
-{% include section
-    blocks="ms-development"
+{% include stage
+    tasks="ms-development"
 %}
 
-{% include section
-    blocks="copy-editing, design, permissions"
+{% include stage
+    tasks="copy-editing, design, permissions"
 %}
 
 
-## Production stage
+## Production
 
-{% include section
-    blocks="digitisation, artwork, stylesheets, software-development"
+{% include stage
+    tasks="digitisation, artwork, stylesheets, software-development"
 %}
 
-{% include section
-    blocks="page-refinement, proofreading"
+{% include stage
+    tasks="page-refinement, proofreading"
 %}
 
-{% include section
-    blocks="indexing"
+{% include stage
+    tasks="indexing"
 %}
 
-{% include section
-    blocks="testing"
+{% include stage
+    tasks="testing"
 %}
 
 
 ## Publication
 
-{% include section
-    blocks="deploy-and-distribute"
+{% include stage
+    tasks="deploy-and-distribute"
 %}
 
-{% include section
-    blocks="maintenance"
+{% include stage
+    tasks="maintenance"
 %}

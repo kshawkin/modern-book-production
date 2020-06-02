@@ -5,6 +5,7 @@ title: "Stylesheets"
 ### Stylesheets
 
 A software developer writes CSS stylesheets that automate the layout according to the designer’s mockups.
+{:.summary}
 
 Working from the final designs, a developer writes CSS templates. CSS (for ‘cascading style sheets’) is software code that controls how content is laid out on a web, ebook or PDF page. Once these CSS templates are written, layout can be automated.
 

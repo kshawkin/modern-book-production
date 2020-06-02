@@ -5,6 +5,7 @@ title: "Software development"
 ### Software development
 
 If special features require new software, the team briefs a software developer to prototype and refine them.
+{:.summary}
 
 Good publishing software already supports a whole range of features and functionality out of the box. Beyond that, many projects have unique needs for which new software must be developed. For instance, special features for apps used in rural areas; custom code for a client’s unusual webserver; and interactive graphics from new data sources.
 

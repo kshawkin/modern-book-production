@@ -5,6 +5,7 @@ title: "Conceptualisation and planning"
 ### Conceptualisation and planning
 
 After research and workshops, the team writes a strategy and plan, and identifies the project director.
+{:.summary}
 
 Any publishing project is [like starting a business](https://arthurattwell.com/2011/12/22/what-publishers-can-learn-from-publishing/). It is always going to be more expensive and take longer than you think to get right. Good strategic thinking and careful planning reduce the gap between expectations and reality.
 

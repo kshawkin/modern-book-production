@@ -5,6 +5,7 @@ title: "Copy editing"
 ### Copy editing
 
 The copy editor improves and fixes mistakes in style, grammar, and consistency.
+{:.summary}
 
 Where a development editor works in broad strokes to improve the overall structure and flow of a manuscript, the copy editor works on finer details: sentence style, grammar, and consistency.
 

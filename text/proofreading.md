@@ -5,6 +5,7 @@ title: "Proofreading"
 ### Proofreading
 
 A professional proofreader reads every word of the final layout carefully, to find any small remaining errors.
+{:.summary}
 
 Every publication must be checked with a fine-toothed comb for small errors and inconsistencies. This cannot be done by anyone who has already worked on the content, because familiarity with the content makes you blind to small errors. And it must only happen when further changes are unlikely.
 

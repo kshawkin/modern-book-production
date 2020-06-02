@@ -5,6 +5,7 @@ title: "Digitisation"
 ### Digitisation
 
 A production specialist turns the edited manuscript into markup, stored in a repository that tracks all changes.
+{:.summary}
 
 At this point, the creative stage has ended, and the production stage has begun. A production specialist turns the edited manuscript into its final, master form: a markup language, such as markdown or HTML, depending on the software they are using. Markup is any consistent syntax that both humans and computers can read.
 
