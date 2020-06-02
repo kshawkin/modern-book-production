@@ -9,6 +9,13 @@
 <body>
     <div class="modern-book-production">
         {{ content }}
+
+        <div class="credits">
+            {% include image file="avatar.png" %}
+            Created and maintained by <a href="https://electricbookworks.com">Electric Book Works</a>,<br>
+            with your help. Contribute at <a href="https://ebw.co/mbp">ebw.co/mbp</a>.
+        </div>
     </div>
+    <script src="{{ site.baseurl }}/js/modern-book-production.js"></script>
 </body>
 </html>
