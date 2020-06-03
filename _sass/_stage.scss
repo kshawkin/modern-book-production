@@ -1,6 +1,74 @@
+@mixin stage-borders($side: "right", $position: "first") {
+    border-#{$side}: $rule-thickness solid $color-text;
+    border-radius: $curve $curve $curve $curve;
+
+    @if $side == "right" {
+        border-radius: 0 $curve $curve 0;
+    } @else {
+        border-radius: $curve 0 0 $curve;
+    }
+
+    // Make top and bottom borders touch
+    border-bottom: $rule-thickness solid $color-text;
+    border-top: $rule-thickness solid $color-text;
+    margin-bottom: -($rule-thickness);
+
+    // Top and bottom 'borders' with pseudoelements
+    // so that we can control their width
+    &::before,
+    &::after {
+    }
+}
+
+@mixin stage-image-alignment($side: "right") {
+
+    @if $side == "left" {
+        .task-image {
+            float: left;
+            margin-right: 1rem;
+            margin-left: 0;
+        }
+    }
+}
+
 .stage {
-    border: $rule-thickness solid $color-text;
-    border-radius: $curve;
-    margin: 1rem 0;
     padding: 2rem 1rem;
+}
+
+// Create alternating sides
+// This seems clumsy, and only goes to a certain depth.
+// Hopefully we'll find a more elegant way.
+h2 + .stage {
+    @include stage-borders();
+    @include stage-image-alignment();
+
+    & + .stage {
+        @include stage-borders(left);
+        @include stage-image-alignment(left);
+
+        & + .stage {
+            @include stage-borders();
+            @include stage-image-alignment();
+
+            & + .stage {
+                @include stage-borders(left);
+                @include stage-image-alignment(left);
+
+                & + .stage {
+                    @include stage-borders();
+                    @include stage-image-alignment();
+
+                    & + .stage {
+                        @include stage-borders(left);
+                        @include stage-image-alignment(left);
+
+                        & + .stage {
+                            @include stage-borders();
+                            @include stage-image-alignment();
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

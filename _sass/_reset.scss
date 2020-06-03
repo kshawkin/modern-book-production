@@ -17,4 +17,9 @@
     margin: revert;
     padding: revert;
     text-align: revert;
+
+    box-sizing: border-box;
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
 }
