@@ -1,6 +1,12 @@
 // Also see _stage.scss for image alignment
+// and see h3 in _type.scss
 
 .task {
+
+    margin-bottom: 1rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     .task-image {
         display: inline-block;
@@ -8,7 +14,7 @@
         margin-left: 1rem;
         margin-right: 0;
         margin-top: 1rem;
-        width: 40%;
+        width: calc(40% - 1rem); // 1rem is margin to text
 
         img {
             // max-height: $line-height * 6 * 1em;
@@ -33,5 +39,9 @@
             font-size: 1rem;
             font-weight: 300;
         }
+    }
+
+    .task-expand {
+        width: 60%;
     }
 }

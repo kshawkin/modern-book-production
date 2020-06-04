@@ -1,0 +1,22 @@
+{% comment %} Work out if the number of stages
+is even or odd, for styling {% endcomment %}
+{% assign number-of-stages = include.tasks | split: ";" | size %}
+{% assign even-or-odd-stages = number-of-stages | modulo: 2 | replace: '0', 'even' | replace: '1', 'odd' %}
+
+<div class="phase stages-{{ even-or-odd-stages }}">
+
+    {% comment %} Add the phase heading {% endcomment %}
+    <h2>
+        {{ include.name }}
+    </h2>
+
+    {% comment %} Get the stages and tasks {% endcomment %}
+    {% assign task-lists = include.tasks | split: ";" %}
+
+    {% for task-list in task-lists %}
+
+        {% include stage tasks=task-list %}
+
+    {% endfor %}
+
+</div>

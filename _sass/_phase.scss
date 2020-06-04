@@ -1,0 +1,42 @@
+// Also see h2 in _type.scss
+
+.phase {
+
+    padding: 3rem 0 0 0;
+
+    // Curves
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 25%;
+        right: 50%;
+        top: 0rem;
+        height: 3rem;
+        border-top: $rule-thickness solid $color-text;
+        border-right: $rule-thickness solid $color-text;
+        border-radius: 0 $curve 0 0;
+    }
+
+    // Curve is on other side if the previous phase
+    // contains an odd number of stages
+    &.stages-odd + .phase {
+        &::before {
+            left: 50%;
+            right: 25%;
+            border-left: 2px solid #262626;
+            border-right: none;
+            border-radius: 4rem 0 0 0;
+        }
+    }
+}
+
+// No curve above first phase
+h1, p {
+    & + .phase {
+        padding-top: 0;
+        &::before {
+            content: normal;
+        }
+    }
+}

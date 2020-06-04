@@ -28,6 +28,8 @@
 {{ page-content }}
 </div>
 
-{% include cross.svg %}
+<div class="task-expand">
+    {% include cross.svg %}
+</div>
 
 </div>

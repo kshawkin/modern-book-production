@@ -41,6 +41,7 @@ body {
     // Import scoped styles. This order matters.
     @import 'reset';
     @import 'type';
+    @import 'phase';
     @import 'stage';
     @import 'task';
     @import 'modal';

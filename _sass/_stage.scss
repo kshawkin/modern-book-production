@@ -8,15 +8,51 @@
         border-radius: $curve 0 0 $curve;
     }
 
-    // Make top and bottom borders touch
-    border-bottom: $rule-thickness solid $color-text;
-    border-top: $rule-thickness solid $color-text;
+    // Make top and bottom borders overlap
+    // border-bottom: $rule-thickness solid $color-text;
+    // border-top: $rule-thickness solid $color-text;
     margin-bottom: -($rule-thickness);
 
-    // Top and bottom 'borders' with pseudoelements
-    // so that we can control their width
+    // Top and bottom borders with pseudoelements
+    position: relative;
     &::before,
     &::after {
+        border-radius: 0 $curve $curve 0;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+    }
+    &::before {
+        border-top: $rule-thickness solid $color-text;
+        bottom: 50%;
+    }
+    &::after {
+        border-bottom: $rule-thickness solid $color-text;
+        top: 50%;
+    }
+
+    &:last-child {
+        &::after {
+            left: 75%;
+        }
+    }
+
+    @if $side == "left" {
+        &::before,
+        &::after {
+            left: 0;
+            right: 50%;
+            border-radius: $curve 0 0 $curve;
+        }
+        &:last-child {
+            &::after {
+                right: 75%;
+                left: 0;
+            }
+        }
     }
 }
 
@@ -27,6 +63,9 @@
             float: left;
             margin-right: 1rem;
             margin-left: 0;
+        }
+        .task-expand {
+            margin-left: 40%; // align with text
         }
     }
 }

@@ -7,61 +7,30 @@ description: site.data.settings.description
 
 This is an overview of a modern book-production process, designed to produce multi-format publications from a single, version-controlled content source. Team members can work simultaneously and remotely. This process might span weeks, months or years.
 
+{% comment %}
+A phase comprises one or more stages. Each stage contains one or more tasks,
+which can happen at the same time. List a phase's tasks separated by commas.
+Use semicolons to separate tasks into stages.
+Each task name corresponds to a markdown file in the tasks folder.
+Each task's image has the same filename as the task.
+{% endcomment %}
 
-## Setup
-
-{% include stage
-    tasks="conceptualisation"
+{% include phase
+    name="Setup"
+    tasks="conceptualisation; commission-authors, tech-infrastructure"
 %}
 
-{% include stage
-    tasks="commission-authors, tech-infrastructure"
+{% include phase
+    name="Creation"
+    tasks="writing; ms-review; ms-development; copy-editing, design, permissions"
 %}
 
-## Creation
-
-{% include stage
-    tasks="writing"
+{% include phase
+    name="Production"
+    tasks="digitisation, artwork, stylesheets, software-development; page-refinement, proofreading; indexing; testing"
 %}
 
-{% include stage
-    tasks="ms-review"
-%}
-
-{% include stage
-    tasks="ms-development"
-%}
-
-{% include stage
-    tasks="copy-editing, design, permissions"
-%}
-
-
-## Production
-
-{% include stage
-    tasks="digitisation, artwork, stylesheets, software-development"
-%}
-
-{% include stage
-    tasks="page-refinement, proofreading"
-%}
-
-{% include stage
-    tasks="indexing"
-%}
-
-{% include stage
-    tasks="testing"
-%}
-
-
-## Publication
-
-{% include stage
-    tasks="deploy-and-distribute"
-%}
-
-{% include stage
-    tasks="maintenance"
+{% include phase
+    name="Publication"
+    tasks="deploy-and-distribute; maintenance"
 %}
