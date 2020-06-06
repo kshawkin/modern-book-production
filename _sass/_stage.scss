@@ -67,6 +67,27 @@
     }
 }
 
+@mixin task-dots($side: "right") {
+    .task-image {
+        position: relative;
+
+        &::before {
+            content: "\2022";
+            font-size: 2rem;
+            position: absolute;
+            right: -1.6rem;
+            top: calc(50% - 1rem);
+
+            // Reverse side for left-aligned images
+            @if $side == "left" {
+                left: -1.6rem;
+                right: auto;
+            }
+        }
+
+    }
+}
+
 .stage {
     padding: 2rem 1rem;
 }
@@ -77,30 +98,37 @@
 h2 + .stage {
     @include stage-borders();
     @include stage-image-alignment();
+    @include task-dots();
 
     & + .stage {
         @include stage-borders(left);
         @include stage-image-alignment(left);
+        @include task-dots(left);
 
         & + .stage {
             @include stage-borders();
             @include stage-image-alignment();
+            @include task-dots();
 
             & + .stage {
                 @include stage-borders(left);
                 @include stage-image-alignment(left);
+                @include task-dots(left);
 
                 & + .stage {
                     @include stage-borders();
                     @include stage-image-alignment();
+                    @include task-dots();
 
                     & + .stage {
                         @include stage-borders(left);
                         @include stage-image-alignment(left);
+                        @include task-dots(left);
 
                         & + .stage {
                             @include stage-borders();
                             @include stage-image-alignment();
+                            @include task-dots();
                         }
                     }
                 }
