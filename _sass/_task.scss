@@ -5,6 +5,7 @@
 
     margin-bottom: 1rem;
     min-height: 10rem;
+    position: relative; // necessary for placement of curves
 
     &:last-child {
         margin-bottom: 0;
@@ -50,7 +51,11 @@
             margin: 0.5rem 0;
 
             // Hide detailed description by default
-            p, ul, ol, dl, blockquote {
+            & ~ p,
+            & ~ ul,
+            & ~ ol,
+            & ~ dl,
+            & ~ blockquote {
                 display: none;
             }
         }

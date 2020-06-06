@@ -1,15 +1,39 @@
 .task-modal {
 
+    // Position
     position: absolute;
     max-height: 90vh;
-    max-width: 90%;
+    // left: 1rem;
+    // right: 1rem;
+    z-index: 1;
+
+    // Appearance
+    background-color: $color-bg;
     border-radius: $modal-border-radius;
+    box-shadow: 0 0 3rem -1rem $color-text;
+    padding: 1rem;
+
+    .task-image {
+        display: none;
+    }
 
     .task-text {
+        width: auto;
+
+        h3,
+        .summary,
+        .task-expand {
+            display: none;
+        }
 
         .summary {
+            font-weight: 500;
 
-            & ~ * {
+            & ~ p,
+            & ~ ol,
+            & ~ ul,
+            & ~ dl,
+            & ~ blockquote {
                 display: revert;
             }
         }
