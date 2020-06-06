@@ -29,6 +29,4 @@ Then to serve the website on your computer, run `bundle exec jekyll serve` in th
 
 ## To do
 
-- Implement design
-- Add opengraph metadata to default layout using settings.yml
-- Write JS for modal
+- Add opengraph metadata and iamge to default layout using settings.yml
