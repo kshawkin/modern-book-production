@@ -86,13 +86,13 @@
         }
     }
 
-    // Mouseover phase highlights all dots in phase
+    // Mouseover phase emphasises all dots in phase
     &:hover,
     &:focus,
     &:active {
 
         .task-image::before {
-            color: $color-highlight;
+            color: $color-bg;
             text-shadow: -1.5px 0 $color-text, 0 1.5px $color-text, 1.5px 0 $color-text, 0 -1.5px $color-text;
         }
     }

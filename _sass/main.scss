@@ -1,5 +1,5 @@
 // Sizes
-$max-width: 37rem;
+$max-width: 40rem;
 $line-height: 1.6;
 $border-radius: 0.1rem;
 $rule-thickness: 2px;
@@ -12,7 +12,10 @@ $font-variable-main: 'Inter var', $font-main;
 // Colours
 $color-bg: #f9f9f9;
 $color-text: #262626;
-$color-highlight: #ffcb05;
+
+// Break points
+$break-width-medium: 600px;
+$break-width-large: 900px;
 
 // Import font
 @import url('https://rsms.me/inter/inter.css');
@@ -20,6 +23,9 @@ $color-highlight: #ffcb05;
 // Global styles for the self-standing site
 body {
     background-color: $color-bg;
+    margin: 2rem auto;
+    max-width: $max-width;
+    padding: 1rem;
 }
 
 // Main wrapper
@@ -31,7 +37,6 @@ body {
     color: $color-text;
     line-height: $line-height;
     margin: auto;
-    max-width: $max-width;
 
     // Load variable fonts for browsers that support them
     font-family: $font-main;

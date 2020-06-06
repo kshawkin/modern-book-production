@@ -4,21 +4,29 @@
 .task {
 
     margin-bottom: 1rem;
+    min-height: 10rem;
+
     &:last-child {
         margin-bottom: 0;
     }
 
     .task-image {
-        display: inline-block;
+        display: flex;
         float: right;
+        justify-content: center;
         margin-left: 1rem;
         margin-right: 0;
         margin-top: 1rem;
         width: calc(40% - 1rem); // 1rem is margin to text
 
+        // Image sits higher on large screens
+        @media only screen and (min-width: $break-width-medium) {
+            margin-top: 0;
+        }
+
         img {
-            // max-height: $line-height * 6 * 1em;
-            width: 100%;
+            max-height: $line-height * 5 * 1rem;
+            max-width: 100%;
         }
     }
 
