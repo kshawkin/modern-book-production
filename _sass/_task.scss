@@ -17,7 +17,13 @@
         margin-left: 1rem;
         margin-right: 0;
         margin-top: 1rem;
-        width: calc(40% - 1rem); // 1rem is margin to text
+        width: calc(50% - 1rem); // 1rem is margin to text
+        @media only screen and (min-width: $break-width-small) {
+            width: calc(40% - 1rem); // 1rem is margin to text
+        }
+        @media only screen and (min-width: $break-width-medium) {
+            width: calc(30% - 1rem); // 1rem is margin to text
+        }
 
         // Image sits higher on large screens
         @media only screen and (min-width: $break-width-medium) {
@@ -32,7 +38,13 @@
 
     .task-text {
         display: inline-block;
-        width: 60%;
+        width: 50%;
+        @media only screen and (min-width: $break-width-small) {
+            width: 60%;
+        }
+        @media only screen and (min-width: $break-width-medium) {
+            width: 70%;
+        }
 
         .summary {
             margin: 0.5rem 0;
@@ -47,9 +59,5 @@
             font-size: 1rem;
             font-weight: 300;
         }
-    }
-
-    .task-expand {
-        width: 60%;
     }
 }

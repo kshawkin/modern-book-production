@@ -62,7 +62,13 @@
             margin-left: 0;
         }
         .task-expand {
-            margin-left: 40%; // align with text
+            margin-left: 50%; // align with text
+            @media only screen and (min-width: $break-width-small) {
+                margin-left: 40%;
+            }
+            @media only screen and (min-width: $break-width-medium) {
+                margin-left: 30%;
+            }
         }
     }
 }
