@@ -86,16 +86,19 @@
 
         .stage:last-child {
 
-            // Line runs to halfway
+            // Line runs to one third, no more
+            // or task-expand will be covered
+            // by pseudo-element and unclickable
             &::after {
-                right: 50%;
+                right: 70%;
             }
 
             .task:last-child {
 
                 // Dot at end of line
                 &::after {
-                    bottom: -3.5rem;
+                    bottom: -3.4rem;
+                    left: calc(30% - 1rem);
                 }
             }
         }

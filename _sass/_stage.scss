@@ -21,7 +21,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 50%;
+        left: 30%;
         right: 0;
     }
     &::before {
@@ -41,7 +41,7 @@
         &::before,
         &::after {
             left: 0;
-            right: 50%;
+            right: 70%; // off centre to keep .task-expand clickable
             border-radius: $curve 0 0 $curve;
         }
         &:last-child {
@@ -60,15 +60,6 @@
             float: left;
             margin-right: 1rem;
             margin-left: 0;
-        }
-        .task-expand {
-            margin-left: 50%; // align with text
-            @media only screen and (min-width: $break-width-small) {
-                margin-left: 40%;
-            }
-            @media only screen and (min-width: $break-width-medium) {
-                margin-left: 30%;
-            }
         }
     }
 }

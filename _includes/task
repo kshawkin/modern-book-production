@@ -26,10 +26,11 @@
 {% comment %} Don't indent, or we get markdown code. {% endcomment %}
 <div class="task-text" markdown="1">
 {{ page-content }}
-</div>
 
 <div class="task-expand">
     {% include cross.svg %}
+</div>
+
 </div>
 
 </div>

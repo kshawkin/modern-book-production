@@ -1,3 +1,17 @@
-.cross {
-    cursor: pointer;
+.task-modal {
+
+    position: absolute;
+    max-height: 90vh;
+    max-width: 90%;
+    border-radius: $modal-border-radius;
+
+    .task-text {
+
+        .summary {
+
+            & ~ * {
+                display: revert;
+            }
+        }
+    }
 }
