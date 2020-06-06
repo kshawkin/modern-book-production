@@ -29,6 +29,39 @@
             border-radius: 4rem 0 0 0;
         }
     }
+
+    // Entering curve at first stage of each phase
+    h2 + .stage {
+
+        &::before {
+            left: 70%;
+        }
+
+        & > .task:first-child {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                right: 25%;
+                top: calc(#{$rule-thickness} - 6rem);
+                height: 4rem;
+                border-left: $rule-thickness solid $color-text;
+                border-bottom: $rule-thickness solid $color-text;
+                border-radius: 0 0 0 $curve;
+            }
+        }
+    }
+
+    // Last phase line runs to halfway
+    &.phase-last {
+        .stage:last-child {
+            &::after {
+                right: 50%;
+            }
+        }
+    }
 }
 
 // No curve above first phase

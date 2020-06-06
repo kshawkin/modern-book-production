@@ -1,6 +1,5 @@
 @mixin stage-borders($side: "right", $position: "first") {
     border-#{$side}: $rule-thickness solid $color-text;
-    border-radius: $curve $curve $curve $curve;
 
     @if $side == "right" {
         border-radius: 0 $curve $curve 0;
@@ -27,11 +26,9 @@
     }
     &::before {
         border-top: $rule-thickness solid $color-text;
-        bottom: 50%;
     }
     &::after {
         border-bottom: $rule-thickness solid $color-text;
-        top: 50%;
     }
 
     &:last-child {

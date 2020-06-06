@@ -3,7 +3,7 @@ is even or odd, for styling {% endcomment %}
 {% assign number-of-stages = include.tasks | split: ";" | size %}
 {% assign even-or-odd-stages = number-of-stages | modulo: 2 | replace: '0', 'even' | replace: '1', 'odd' %}
 
-<div class="phase stages-{{ even-or-odd-stages }}">
+<div class="phase stages-{{ even-or-odd-stages }}{% if include.position %} phase-{{ include.position }}{% endif %}">
 
     {% comment %} Add the phase heading {% endcomment %}
     <h2>

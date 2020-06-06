@@ -33,4 +33,5 @@ Each task's image has the same filename as the task.
 {% include phase
     name="Publication"
     tasks="deploy-and-distribute; maintenance"
+    position="last"
 %}
