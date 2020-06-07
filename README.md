@@ -5,6 +5,19 @@ This is a visual representation of the modern book-production process. While the
 This project is maintained by Electric Book Works, with your help.
 
 
+## Share
+
+You can get [a static image to share here](https://electricbookworks.github.io/modern-book-production/downloads/Modern-Book-Production.png).
+
+If you want to embed the graphic on your site, place this code in your HTML:
+
+``` html
+<iframe src="https://electricbookworks.github.io/modern-book-production/index.html" title="Modern Book Production" width="100%" height="5100px"></iframe>
+```
+
+Depending on your site's design, you may want to adjust the `height` value there. Add more height to avoid a scrollbar. Reduce the height to avoid empty space below the graphic.
+
+
 ## Contribute
 
 Anyone can suggest changes.
