@@ -31,7 +31,7 @@
             & ~ ul,
             & ~ dl,
             & ~ blockquote {
-                display: revert;
+                display: unset;
             }
         }
     }

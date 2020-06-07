@@ -7,16 +7,16 @@
 // https://github.com/premasagar/cleanslate.
 
 * {
-    background-color: revert;
-    color: revert;
-    float: revert;
-    font-size: revert;
-    font-style: revert;
-    font-weight: revert;
-    line-height: revert;
-    margin: revert;
-    padding: revert;
-    text-align: revert;
+    background-color: unset;
+    color: unset;
+    float: unset;
+    font-size: unset;
+    font-style: unset;
+    font-weight: unset;
+    line-height: unset;
+    margin: unset;
+    padding: unset;
+    text-align: unset;
 
     box-sizing: border-box;
     *, *:before, *:after {
