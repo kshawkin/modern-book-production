@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.data.settings.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/styles/web.css">
+
+    <meta property="og:title"
+        content="{{ site.data.settings.title }}{% if page.title and page.title != "" %}: {{ page.title | markdownify | strip_html }}{% endif %}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.data.settings.url }}{{ page.url }}" />
+    <meta property="og:image"
+        content="{{ site.data.settings.url }}/images/{% if page.image %}{{ page.image }}{% else %}{{ site.data.settings.image }}{% endif %}" />
+    <meta property="og:description"
+        content="{% if page.description and page.description != "" %}{{ page.description | markdownify | strip_html }}{% elsif page.excerpt and page.excerpt != "" %}{{ page.excerpt | markdownify | strip_html }}{% else %}{{ site.data.settings.description }}{% endif %}" />
+    <meta property="og:site_name" content="{{ site.data.settings.title }}" />
+
 </head>
 <body>
     <div class="modern-book-production">

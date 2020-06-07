@@ -1,8 +1,8 @@
 # Modern Book Production
 
-This is a graphic representation of the modern book-production process. While there is no one, standard workflow, this is an attempt to make a generic, digital-first workflow easy to understand.
+This is a visual representation of the modern book-production process. While there is no one way to make books, most digital-first workflows for professional book production will look something like this.
 
-It is maintained by Electric Book Works, with your help.
+This project is maintained by Electric Book Works, with your help.
 
 
 ## Contribute
@@ -25,8 +25,3 @@ Then to serve the website on your computer, run `bundle exec jekyll serve` in th
 - If you want to change the text of a task, edit the markdown files in `tasks`. 
 - If you want to change more than that, take some time to look through the structure of `index.md`, `_layouts/default.html`, and the HTML templates in `_includes`.
 - If you want to change the design, you'll start with `styles/web.css`, which imports Sass partials from `_sass`.
-
-
-## To do
-
-- Add opengraph metadata and iamge to default layout using settings.yml

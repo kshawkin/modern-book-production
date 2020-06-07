@@ -1,6 +1,4 @@
 ---
-title: site.data.settings.title
-description: site.data.settings.description
 ---
 
 # {{ site.data.settings.title }}

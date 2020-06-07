@@ -1,4 +1,6 @@
 # Site-wide settings
 
 title: "Modern Book Production"
-description: "A graphic description of the modern book-production process."
+description: "A visual description of the modern book-production process."
+image: "modern-book-production.jpg"
+url: "https://electricbookworks.github.io/modern-book-production"
