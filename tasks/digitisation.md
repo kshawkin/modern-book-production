@@ -17,4 +17,4 @@ The master files are stored in a repository: a project folder in which every cha
 
 This way, each project is a self-standing package, containing both the book’s master content and the tools for generating published editions. A project’s repository might contain any number of books, in a series or collection. The repository is accessible online, and safely backed up.
 
-This stage is analogous to typesetting In traditional publishing, which refers to laying out the text into pages for print, usually using Adobe InDesign. Modern, digital-first workflows do not use InDesign for layout, because InDesign is not well suited to producing ebooks, websites and apps directly from a single set of master files.
+This stage is analogous to typesetting in traditional publishing, which refers to laying out the text into pages for print, usually using Adobe InDesign. Modern, digital-first workflows do not use InDesign for layout, because InDesign is not well suited to producing ebooks, websites and apps directly from a single set of master files.
