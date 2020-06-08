@@ -1,6 +1,6 @@
 # Modern Book Production
 
-This is a visual representation of the modern book-production process. While there is no one way to make books, most digital-first workflows for professional book production will look something like this.
+[This is a visual representation of the modern book-production process.](https://electricbookworks.github.io/modern-book-production/) While there is no one way to make books, most digital-first workflows for professional book production will look something like this.
 
 This project is maintained by Electric Book Works, with your help.
 
